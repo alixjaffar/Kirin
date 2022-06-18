@@ -11,6 +11,7 @@
 		9F5B0FEF28405DEE0031902C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5B0FEE28405DEE0031902C /* ContentView.swift */; };
 		9F5B0FF128405DEF0031902C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5B0FF028405DEF0031902C /* Assets.xcassets */; };
 		9F5B0FF428405DEF0031902C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5B0FF328405DEF0031902C /* Preview Assets.xcassets */; };
+		9FDD0FA1285994A6000D76C2 /*  Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDD0FA0285994A6000D76C2 /*  Launch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		9F5B0FEE28405DEE0031902C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9F5B0FF028405DEF0031902C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F5B0FF328405DEF0031902C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9FDD0F9F28597157000D76C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9FDD0FA0285994A6000D76C2 /*  Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = " Launch.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,7 @@
 		9F5B0FE028405DEE0031902C = {
 			isa = PBXGroup;
 			children = (
+				9FDD0FA0285994A6000D76C2 /*  Launch.storyboard */,
 				9F5B0FEB28405DEE0031902C /* Kirin */,
 				9F5B0FEA28405DEE0031902C /* Products */,
 			);
@@ -51,6 +55,7 @@
 		9F5B0FEB28405DEE0031902C /* Kirin */ = {
 			isa = PBXGroup;
 			children = (
+				9FDD0F9F28597157000D76C2 /* Info.plist */,
 				9F5B0FEC28405DEE0031902C /* KirinApp.swift */,
 				9F5B0FEE28405DEE0031902C /* ContentView.swift */,
 				9F5B0FF028405DEF0031902C /* Assets.xcassets */,
@@ -125,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FDD0FA1285994A6000D76C2 /*  Launch.storyboard in Resources */,
 				9F5B0FF428405DEF0031902C /* Preview Assets.xcassets in Resources */,
 				9F5B0FF128405DEF0031902C /* Assets.xcassets in Resources */,
 			);
@@ -267,11 +273,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kirin/Preview Content\"";
+				DEVELOPMENT_TEAM = R3Q29FZ254;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kirin/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kirin needs access to the camera for it to function properly";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = " Launch";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -295,11 +304,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kirin/Preview Content\"";
+				DEVELOPMENT_TEAM = R3Q29FZ254;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kirin/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kirin needs access to the camera for it to function properly";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = " Launch";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
