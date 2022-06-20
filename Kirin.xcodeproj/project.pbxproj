@@ -12,6 +12,12 @@
 		9F5B0FF128405DEF0031902C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5B0FF028405DEF0031902C /* Assets.xcassets */; };
 		9F5B0FF428405DEF0031902C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5B0FF328405DEF0031902C /* Preview Assets.xcassets */; };
 		9FDD0FA1285994A6000D76C2 /*  Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDD0FA0285994A6000D76C2 /*  Launch.storyboard */; };
+		9FE5BAD1285EB9C300AE57C4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5BAD0285EB9C300AE57C4 /* ViewModel.swift */; };
+		9FE5BAD3285EC29700AE57C4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5BAD2285EC29700AE57C4 /* ImagePicker.swift */; };
+		9FE5BAD5285EC5A600AE57C4 /* Classifier .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5BAD4285EC5A600AE57C4 /* Classifier .swift */; };
+		9FE5BAD7285EC68B00AE57C4 /* SavedModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5BAD6285EC68B00AE57C4 /* SavedModel.mlmodel */; };
+		9FE5BAD9285EC6C200AE57C4 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5BAD8285EC6C200AE57C4 /* ImageClassifier.swift */; };
+		9FE5BADD285FDF2500AE57C4 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5BADC285FDF2500AE57C4 /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		9F5B0FF328405DEF0031902C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FDD0F9F28597157000D76C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9FDD0FA0285994A6000D76C2 /*  Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = " Launch.storyboard"; sourceTree = "<group>"; };
+		9FE5BAD0285EB9C300AE57C4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9FE5BAD2285EC29700AE57C4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9FE5BAD4285EC5A600AE57C4 /* Classifier .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Classifier .swift"; sourceTree = "<group>"; };
+		9FE5BAD6285EC68B00AE57C4 /* SavedModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SavedModel.mlmodel; sourceTree = "<group>"; };
+		9FE5BAD8285EC6C200AE57C4 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		9FE5BADC285FDF2500AE57C4 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,8 @@
 		9F5B0FE028405DEE0031902C = {
 			isa = PBXGroup;
 			children = (
+				9FE5BAD2285EC29700AE57C4 /* ImagePicker.swift */,
+				9FE5BACD285EB8A300AE57C4 /* Views */,
 				9FDD0FA0285994A6000D76C2 /*  Launch.storyboard */,
 				9F5B0FEB28405DEE0031902C /* Kirin */,
 				9F5B0FEA28405DEE0031902C /* Products */,
@@ -57,8 +71,10 @@
 			children = (
 				9FDD0F9F28597157000D76C2 /* Info.plist */,
 				9F5B0FEC28405DEE0031902C /* KirinApp.swift */,
-				9F5B0FEE28405DEE0031902C /* ContentView.swift */,
 				9F5B0FF028405DEF0031902C /* Assets.xcassets */,
+				9FE5BADC285FDF2500AE57C4 /* MobileNetV2.mlmodel */,
+				9FE5BAD6285EC68B00AE57C4 /* SavedModel.mlmodel */,
+				9FE5BACE285EB8B600AE57C4 /* View Models */,
 				9F5B0FF228405DEF0031902C /* Preview Content */,
 			);
 			path = Kirin;
@@ -70,6 +86,24 @@
 				9F5B0FF328405DEF0031902C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FE5BACD285EB8A300AE57C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F5B0FEE28405DEE0031902C /* ContentView.swift */,
+				9FE5BAD8285EC6C200AE57C4 /* ImageClassifier.swift */,
+				9FE5BAD4285EC5A600AE57C4 /* Classifier .swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FE5BACE285EB8B600AE57C4 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FE5BAD0285EB9C300AE57C4 /* ViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F5B0FEF28405DEE0031902C /* ContentView.swift in Sources */,
+				9FE5BAD3285EC29700AE57C4 /* ImagePicker.swift in Sources */,
+				9FE5BADD285FDF2500AE57C4 /* MobileNetV2.mlmodel in Sources */,
+				9FE5BAD1285EB9C300AE57C4 /* ViewModel.swift in Sources */,
+				9FE5BAD5285EC5A600AE57C4 /* Classifier .swift in Sources */,
+				9FE5BAD7285EC68B00AE57C4 /* SavedModel.mlmodel in Sources */,
+				9FE5BAD9285EC6C200AE57C4 /* ImageClassifier.swift in Sources */,
 				9F5B0FED28405DEE0031902C /* KirinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

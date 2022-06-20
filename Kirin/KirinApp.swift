@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct KirinApp: App {
+struct SeeFoodApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(classifier: ImageClassifier())
         }
     }
 }
