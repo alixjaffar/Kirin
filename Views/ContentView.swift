@@ -10,7 +10,7 @@ import UIKit
 
 struct ContentView: View {
 
-    
+    @State var tapped = false
     @State private var fadeInOut = false
     @State private var showImage: Bool = false
     @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
@@ -130,7 +130,53 @@ struct ContentView: View {
                         
                         
                     }
-                }
+            HStack {
+                if !tapped {
+                    Spacer()
+                    Image(systemName: "asterisk.circle")
+                        .padding()
+                        .foregroundColor(Color("Color1"))
+
+                
+                } else {
+                    VStack(alignment: .leading) {
+                        Text( "Why should we care?")
+                            .font(.title.weight (.bold))
+                            .padding()
+                        Text("By Recycling we can convert materials into new goods, minimising the need to use natural resources and helping to maintain natural environments for the future. Using recycled materials in the production process requires significantly less energy than generating new items from raw materials. Recycling minimises the need for raw material extraction, refining, and processing, all of which contribute to air and water pollution. Recycling saves energy while also lowering greenhouse gas emissions, which aids in the fight against climate change. When we recycle, recyclable materials are reprocessed into new goods, reducing the quantity of garbage sent to landfills and thereby lowering methane emissions, a potent greenhouse gas.")
+                            .font (.caption.weight( .regular))
+                            .padding()
+                            .frame(height: 280)
+                    }
+                    .frame(width: 350, alignment: .leading)
+                    .background (
+                        LinearGradient(
+                            gradient: Gradient(colors: [.blue, .green]),
+                            startPoint: .leading,
+                            endPoint: .trailing))
+                    .cornerRadius(20)
+                    .shadow(color: Color(.secondaryLabel),
+                            radius: 12,
+                            x: 0,
+                            y: 5
+                    )
+            }
+            
+        }
+        .onTapGesture{
+            withAnimation{
+                tapped.toggle()
+
+            }
+        }
+    }
+        .padding()
+        .background (
+            LinearGradient(
+                gradient: Gradient(colors: [.purple, .teal]),
+                startPoint: .leading,
+                endPoint: .trailing))
+
                 
                 .sheet(isPresented: $isPresenting){
                     ImagePicker(uiImage: $uiImage, isPresenting:  $isPresenting, sourceType: $sourceType)
@@ -147,9 +193,7 @@ struct ContentView: View {
                         gradient: Gradient(colors: [.purple, .teal]),
                         startPoint: .leading,
                         endPoint: .trailing))
-                
-        
-        
+    
     }
         
 }
@@ -166,6 +210,7 @@ struct ContentView_Previews: PreviewProvider {
         
     }
 }
+
 
 
 
