@@ -9,4 +9,3 @@ An easy and simple way to use machine learning and AI to detect garbage and recy
 
 If you need any help with using it for your own usage please do message me on discord Alcatraz#1073 or join my discord server at https://discord.gg/uWfNXeYvjP
 
-https://lh4.googleusercontent.com/4hvQJX5TIrDLmJKUrJy32gy_62f062jHKSy6RFpmRup51CwLrTDsoM3vLTXRk1x7jEYftud4b9BI0pM=w2994-h1730
