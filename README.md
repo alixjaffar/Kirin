@@ -1,6 +1,6 @@
 # Kirin
 
-You can now download kirin on the app store! https://apps.apple.com/us/app/kirin/id6443730010!!
+You can now download kirin on the app store! https://apps.apple.com/us/app/kirin/id6443730010!
 
 ```
 An easy and simple way to use machine learning and AI to detect garbage and recycling!
